@@ -8,7 +8,7 @@ from PIL import Image
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app, origins=['http://localhost:3000', 'http://127.0.0.1:3000'], 
+CORS(app, origins=['http://localhost:3000', 'http://127.0.0.1:3000','https://6889d8f172a072616d93bbdd--scintillating-dolphin-764cf3.netlify.app'], 
      methods=['GET', 'POST'], 
      allow_headers=['Content-Type'])  # Enable CORS with specific configuration
 
@@ -79,5 +79,4 @@ def predict():
 
 # Run the app
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))  # use Render's injected PORT
-    app.run(host="0.0.0.0", port=port)
+    app.run(debug=True)
