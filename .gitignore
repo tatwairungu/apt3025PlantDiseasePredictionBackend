@@ -14,7 +14,7 @@ instance/
 
 # Uploaded files and temporary storage
 uploads/
-*.h5
+
 
 # macOS system files
 .DS_Store
